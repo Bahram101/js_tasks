@@ -82,3 +82,18 @@
 // console.log(getExtension('asdf.filename.exe'))
 
 /***************************************************************/
+
+// const app = document.getElementById("app");
+// const { log } = console;
+
+// const treeDepth = (divel, currentLevel) => {
+//   if (divel.children.length === 0) return currentLevel;
+//   currentLevel += 1;
+//   let maxDepth = currentLevel;
+//   Array.from(divel.children).forEach((item) => {
+//     maxDepth = Math.max(treeDepth(item, currentLevel), maxDepth);
+//   });
+//   return maxDepth;
+// };
+
+// log(treeDepth(app, 0));
