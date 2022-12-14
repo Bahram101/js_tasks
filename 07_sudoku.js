@@ -27,33 +27,27 @@
 
 //Полиндром
 
-// const isPalindrome = (str) => {
-// let res;
-// let reversed = str.split("").reverse().join("");
-// if (reversed === str) {
-//   res = "Palindrome";
-// } else {
-//   res = "Not Palindrome";
-// }
-// return res;
+const isPalindrome = (str) => {
+  return str === str.toLowerCase().split("").reverse().join("")
+    ? "Palindrome"
+    : "Not Palindrome";
 
-//-------------------------------------------------
+  //-------------------------------------------------
 
-// str = str.toLowerCase().replace(/\s/g,'')
-// return str === str.split("").reverse().join("")
-//   ? "Palindrome"
-//   : "Not Palindrome";
+  // str = str.toLowerCase().replace(/\s/g, "");
+  // return str === str.split("").reverse().join("")
+  //   ? "Palindrome"
+  //   : "Not Palindrome";
 
-//-------------------------------------------------
+  //-------------------------------------------------
 
-//   const len = Math.floor(str.length / 2);
-//   for (let i = 0; i < len; i++) {
-//     if (str[i] !== str[str.length - i - 1]) {
-//       return "Not Palindrome";
-//     }
-//   }
-//   return "Palindrome";
-// };
+  //   const len = Math.floor(str.length / 2);
+  //   for (let i = 0; i < len; i++) {
+  //     if (str[i] !== str[str.length - i - 1]) {
+  //       return "Not Palindrome";
+  //     }
+  //   }
+  //   return "Palindrome";
+};
 
-// console.log(isPalindrome("racedcar"));
- 
+console.log(isPalindrome("racecar"));
