@@ -16,27 +16,18 @@
 
 //Замыкание
 
-function createStep() {
-  let count = 0;
-  return function () {
-    count++;
-    console.log(count);
-  };
-}
-let res = createStep();
-res(); //1
-res(); //2
-res(); //3
-
-let name = "John";
-
-function sayHi() {
-  alert("Hi, " + name);
-}
-
-name = "Pete";
-
-sayHi(); // что будет показано: "John" или "Pete"?
+// function createStep() {
+//   let count = 0;
+//   return function () {
+//     count++;
+//     console.log(count);
+//   };
+// }
+// let res = createStep();
+// res(); //1
+// res(); //2
+// res(); //3
+ 
 /******************************************************************************/
 
 // const accum = (str) => {
